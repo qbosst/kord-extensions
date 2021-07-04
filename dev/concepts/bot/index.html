@@ -12,7 +12,7 @@
         <link rel="canonical" href="https://kord-extensions.docs.kotlindiscord.com/dev/concepts/bot/">
       
       <link rel="icon" href="../../assets/icon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.4">
+      <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.1.9">
     
     
       
@@ -20,10 +20,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.bde7dde4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ca7ac06f.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ef6f36e2.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.f1a3b89f.min.css">
         
       
     
@@ -42,6 +42,8 @@
     
     
       
+
+
     
     
   </head>
@@ -107,7 +109,7 @@
         
           
           
-          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="" type="radio" name="__palette" id="__palette_1">
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
           
             <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 10a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2m10-3a5 5 0 0 1 5 5 5 5 0 0 1-5 5H7a5 5 0 0 1-5-5 5 5 0 0 1 5-5h10M7 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3h10a3 3 0 0 0 3-3 3 3 0 0 0-3-3H7z"/></svg>
@@ -116,7 +118,7 @@
         
           
           
-          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent="" type="radio" name="__palette" id="__palette_2">
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
           
             <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3z"/></svg>
@@ -266,7 +268,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../modules/common/" class="md-tabs__link">
+      <a href="../../modules/" class="md-tabs__link">
         Modules
       </a>
     </li>
@@ -474,11 +476,31 @@
     Extensions configuration
   </a>
   
+    <nav class="md-nav" aria-label="Extensions configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#help-extension" class="md-nav__link">
+    Help Extension
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
   <a href="#hooks" class="md-nav__link">
     Hooks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#i18n-configuration" class="md-nav__link">
+    I18n configuration
   </a>
   
 </li>
@@ -657,8 +679,32 @@
   
   
     <li class="md-nav__item">
+      <a href="../../utilities/components/" class="md-nav__link">
+        Components
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../utilities/paginator/" class="md-nav__link">
         Paginator
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../utilities/scheduler/" class="md-nav__link">
+        Scheduler
       </a>
     </li>
   
@@ -753,8 +799,44 @@
   
   
     <li class="md-nav__item">
+      <a href="../../modules/" class="md-nav__link">
+        About
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modules/java-time/" class="md-nav__link">
+        Java Time
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modules/time4j/" class="md-nav__link">
+        Time4J
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../modules/common/" class="md-nav__link">
-        Common
+        Extra: Common
       </a>
     </li>
   
@@ -1057,27 +1139,27 @@ that you can make use of to configure your bot.</p>
 <tbody>
 <tr>
 <td align="left">check</td>
-<td align="center">DSL function</td>
+<td align="center">DSL Function</td>
 <td align="center"></td>
-<td align="left">Register a <a href="/concepets/checks">check</a> that will be applied to all message commands.</td>
+<td align="left">Register a <a href="/concepets/checks">check</a> that will be applied to all slash commands.</td>
+</tr>
+<tr>
+<td align="left">defaultGuild</td>
+<td align="center">DSL Function</td>
+<td align="center"><code>null</code></td>
+<td align="left">For testing, specify a guild ID to use for all slash commands that would normally be global. You can still override this by using the <code>guild()</code> function provided when defining your slash commands.</td>
 </tr>
 <tr>
 <td align="left">enabled</td>
 <td align="center">Boolean</td>
 <td align="center"><code>false</code></td>
-<td align="left">Whether to support registration and invocation of slash commands</td>
+<td align="left">Whether to support registration and invocation of slash commands.</td>
 </tr>
 <tr>
 <td align="left">slashRegistry</td>
-<td align="center">DSL Functon</td>
+<td align="center">DSL Function</td>
 <td align="center"></td>
-<td align="left">If you'd like to use a <code>SlashCommandRegistry</code> subclass, then you can register a builder that returns it here.</td>
-</tr>
-<tr>
-<td align="left">threads</td>
-<td align="center">Int</td>
-<td align="center"><code>CPus * 2</code></td>
-<td align="left">How many threads to use for the command execution threadpool</td>
+<td align="left">If you'd like to use a <code>SlashCommandRegistry</code> subclass, then you can register a builder that returns it here - most likely the constructor.</td>
 </tr>
 </tbody>
 </table>
@@ -1091,10 +1173,8 @@ that you can make use of to configure your bot.</p>
 <span class="normal">5</span>
 <span class="normal">6</span>
 <span class="normal">7</span>
-<span class="normal">8</span>
-<span class="normal">9</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kd">val</span> <span class="nv">bot</span> <span class="o">=</span> <span class="n">ExtensibleBot</span><span class="p">(</span><span class="n">token</span><span class="p">)</span> <span class="p">{</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kd">val</span> <span class="nv">bot</span> <span class="o">=</span> <span class="n">ExtensibleBot</span><span class="p">(</span><span class="n">token</span><span class="p">)</span> <span class="p">{</span>
     <span class="n">extensions</span> <span class="p">{</span>
-        <span class="n">help</span> <span class="o">=</span> <span class="kc">true</span>
         <span class="n">sentry</span> <span class="o">=</span> <span class="kc">false</span>
 
         <span class="n">add</span><span class="p">(</span><span class="o">::</span><span class="n">LogsExtension</span><span class="p">)</span>
@@ -1121,15 +1201,94 @@ that you can make use of to configure your bot.</p>
 </tr>
 <tr>
 <td align="left">help</td>
-<td align="center">Boolean</td>
-<td align="center"><code>true</code></td>
-<td align="left">Whether to enabled the bundled help extension</td>
+<td align="center">DSL Function</td>
+<td align="center"></td>
+<td align="left">Used to configure the bundled help extension</td>
 </tr>
 <tr>
 <td align="left">sentry</td>
 <td align="center">Boolean</td>
 <td align="center"><code>true</code></td>
 <td align="left">Whether to enabled the bundled <a href="/integrations/sentry">Sentry extension</a></td>
+</tr>
+</tbody>
+</table>
+<p>External modules that add extensions are free to add extension functions to this class, which gives users a convenient
+way to configure them. If you're using an external module, we recommend reading the documentation for any modules you
+may be using.</p>
+<h4 id="help-extension">Help Extension<a class="headerlink" href="#help-extension" title="Permanent link">&para;</a></h4>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kd">val</span> <span class="nv">bot</span> <span class="o">=</span> <span class="n">ExtensibleBot</span><span class="p">(</span><span class="n">token</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">extensions</span> <span class="p">{</span>
+        <span class="n">help</span> <span class="p">{</span>
+            <span class="n">colour</span> <span class="p">{</span> <span class="n">DISCORD_GREEN</span> <span class="p">}</span>
+
+            <span class="n">deletePaginatorOnTimeout</span> <span class="o">=</span> <span class="kc">true</span>
+            <span class="n">deleteInvocationOnPaginatorTimeout</span> <span class="o">=</span> <span class="kc">true</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="center">Type</th>
+<th align="center">Default</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">check</td>
+<td align="center">DSL Function</td>
+<td align="center"></td>
+<td align="left">Register a <a href="/concepets/checks">check</a> that will be applied to all help extension commands</td>
+</tr>
+<tr>
+<td align="left">colour</td>
+<td align="center">DSL Function</td>
+<td align="center"></td>
+<td align="left">Register a callback returning a Kord <code>Color</code> object to use it for the help command pages - this is called for every page generated, so feel free to return randomized colours if you'd like to</td>
+</tr>
+<tr>
+<td align="left">deleteInvocationOnPaginatorTimeout</td>
+<td align="center">Boolean</td>
+<td align="center"><code>false</code></td>
+<td align="left">Whether to try to delete the user's <code>!help</code> command when the paginator times out</td>
+</tr>
+<tr>
+<td align="left">deletePaginatorOnTimeout</td>
+<td align="center">Boolean</td>
+<td align="center"><code>false</code></td>
+<td align="left">Whether to delete the help command's output paginator when it times out</td>
+</tr>
+<tr>
+<td align="left">enableBundledExtension</td>
+<td align="center">Boolean</td>
+<td align="center"><code>true</code></td>
+<td align="left">Whether to enable the bundled help extension</td>
+</tr>
+<tr>
+<td align="left">paginatorTimeout</td>
+<td align="center">Long</td>
+<td align="center"><code>60_000</code></td>
+<td align="left">How long to wait until a paginator times out and becomes unusable - defaults to 60 seconds</td>
+</tr>
+<tr>
+<td align="left">pingInReply</td>
+<td align="center">Boolean</td>
+<td align="center"><code>true</code></td>
+<td align="left">Whether to ping users in response to their help command invocations</td>
 </tr>
 </tbody>
 </table>
@@ -1155,6 +1314,22 @@ the bot precisely how you need it.</p>
 <details class="important"><summary>ExtensibleBotBuilder subclasses</summary><p>Please note that some hooks are called by the <code>build</code> function - if you override this function, you need to remember
 to similarly call the corresponding hook functions yourself.</p>
 </details>
+<table>
+<thead>
+<tr>
+<th align="left">Property</th>
+<th align="center">Default</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">kordShutdownHook</td>
+<td align="center"><code>true</code></td>
+<td align="left">Whether Kord should register a hook that logs out of the gateway as part of the application shutdown process</td>
+</tr>
+</tbody>
+</table>
 <table>
 <thead>
 <tr>
@@ -1197,6 +1372,63 @@ to similarly call the corresponding hook functions yourself.</p>
 </tr>
 </tbody>
 </table>
+<h3 id="i18n-configuration">I18n configuration<a class="headerlink" href="#i18n-configuration" title="Permanent link">&para;</a></h3>
+<p>The i18n builder allows you to configure the default locale, and register locale resolvers and a translations 
+provider. The default locale is <code>SupportedLocales.ENGLISH</code>, if you don't change it.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kd">val</span> <span class="nv">bot</span> <span class="o">=</span> <span class="n">ExtensibleBot</span><span class="p">(</span><span class="n">token</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">i18n</span> <span class="p">{</span>
+        <span class="n">defaultLocale</span> <span class="o">=</span> <span class="n">SupportedLocales</span><span class="p">.</span><span class="na">ENGLISH</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table>
+<table>
+<thead>
+<tr>
+<th align="left">Property</th>
+<th align="center">Type</th>
+<th align="center">Default</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">defaultLocale</td>
+<td align="center">Locale</td>
+<td align="center"><code>ENGLISH</code></td>
+<td align="left">The default locale to use, when your locale resolvers don't return a different one</td>
+</tr>
+<tr>
+<td align="left">translationsProvider</td>
+<td align="center">TranslationsProvider</td>
+<td align="center"><code>ResourceBundleTranslations</code></td>
+<td align="left">Implementation of <code>TranslationsProvider</code> responsible for transforming translation keys into strings, replacing placeholders as necessary</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th align="left">Function</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">localeResolver</td>
+<td align="left">Call this to register a lambda (or callable) that takes a <code>Guild?</code>, <code>Channel</code> and <code>User?</code> argument and returns a <code>Locale</code> object, or <code>null</code> to move on to the next resolver - you can use this to set up, for example, guild-specific locales</td>
+</tr>
+<tr>
+<td align="left">translationsProvider</td>
+<td align="left">Call this to register a builder (usually a constructor) returning a TranslationsProvider instance - this is called immediately, you can't conditionally dispatch to multiple providers with this</td>
+</tr>
+</tbody>
+</table>
+<p>For more information on i18n and translations, see <a href="/concepts/i18n">the i18n page</a>.</p>
 <h3 id="intent-configuration">Intent configuration<a class="headerlink" href="#intent-configuration" title="Permanent link">&para;</a></h3>
 <p>This matches Kord's intents API. For a list of available intents, 
 <a href="https://kordlib.github.io/kord/gateway/gateway/dev.kord.gateway/-intent/index.html">see the Kord documentation</a>.</p>
@@ -1261,84 +1493,6 @@ note that you will need the <code>GUILD_MEMBERS</code> privileged intent to fill
 </tr>
 </tbody>
 </table>
-<table>
-<thead>
-<tr>
-<th align="left">Name</th>
-<th align="center">Type</th>
-<th align="center">Default</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left"><code>token</code></td>
-<td align="center"><code>String</code></td>
-<td align="center"></td>
-<td align="left">The Discord bot token to login with</td>
-</tr>
-<tr>
-<td align="left"><code>prefix</code></td>
-<td align="center"><code>String</code></td>
-<td align="center"></td>
-<td align="left">The prefix required before all command invocations</td>
-</tr>
-<tr>
-<td align="left"><code>addHelpExtension</code></td>
-<td align="center"><code>Boolean</code></td>
-<td align="center"><code>true</code></td>
-<td align="left">Whether to add the bundled help extension automatically</td>
-</tr>
-<tr>
-<td align="left"><code>addSentryExtension</code></td>
-<td align="center"><code>Boolean</code></td>
-<td align="center"><code>true</code></td>
-<td align="left">Whether to add the bundled <a href="/integrations/sentry">Sentry integration</a> extension automatically</td>
-</tr>
-<tr>
-<td align="left"><code>invokeCommandOnMention</code></td>
-<td align="center"><code>Boolean</code></td>
-<td align="center"><code>true</code></td>
-<td align="left">Whether commands may also be invoked by mentioning the bot</td>
-</tr>
-<tr>
-<td align="left"><code>messageCacheSize</code></td>
-<td align="center"><code>Int</code></td>
-<td align="center"><code>10_000</code></td>
-<td align="left">How many messages to keep in the messages cache by default</td>
-</tr>
-<tr>
-<td align="left"><code>commandThreads</code></td>
-<td align="center"><code>Int</code></td>
-<td align="center">CPUs * 2</td>
-<td align="left">How many threads to use for the command execution threadpool</td>
-</tr>
-<tr>
-<td align="left"><code>guildsToFill</code></td>
-<td align="center"><code>List &lt;Snowflake&gt;</code></td>
-<td align="center"><code>[ ]</code></td>
-<td align="left">A list of guilds to request all members for during the connection phase. This requires the <code>GuildMembers</code> intent, specified in the <code>start</code> function</td>
-</tr>
-<tr>
-<td align="left"><code>fillPresences</code></td>
-<td align="center"><code>Boolean?</code></td>
-<td align="center"><code>null</code></td>
-<td align="left">Whether to request presences for the above members (<code>true</code>/<code>false</code>, or <code>null</code> for the default). This requires the <code>GuildPresences</code> intent, specified in the <code>start</code> function</td>
-</tr>
-<tr>
-<td align="left"><code>koinLogLevel</code></td>
-<td align="center"><code>Level</code></td>
-<td align="center"><code>ERROR</code></td>
-<td align="left">The default logging level that Koin should use</td>
-</tr>
-<tr>
-<td align="left"><code>handleSlashCommands</code></td>
-<td align="center"><code>Boolean</code></td>
-<td align="center"><code>false</code></td>
-<td align="left">Whether to support registration and invocation of slash commands. Setting this to fault will not raise errors for extensions that register slash commands, however - they just won't work</td>
-</tr>
-</tbody>
-</table>
 <h3 id="presence-configuration">Presence configuration<a class="headerlink" href="#presence-configuration" title="Permanent link">&para;</a></h3>
 <p>This matches Kord's initial presence API. For more information,
 <a href="https://kordlib.github.io/kord/gateway/gateway/dev.kord.gateway.builder/-presence-builder/index.html">see the Kord documentation</a>.</p>
@@ -1368,8 +1522,7 @@ currently working on bots that require sharding.</p>
 <p>If you need sharding, please contact us and we can work out the details.</p>
 </details>
 <h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h2>
-<p>A few properties are available to you, for getting access to Kord, querying some of the bot's state, and some other 
-things.</p>
+<p>A few properties are available to you, for getting access to a few internals.</p>
 <details class="info"><summary>Further properties</summary><p>There are other non-private properties available, but they aren't necessarily something you'll need to touch. Most
 of the properties are <code>open</code> to facilitate niche use-cases that require extending the ExtensibleBot class.</p>
 </details>
@@ -1400,7 +1553,7 @@ and should now be accessed via Koin. For more information, see <a href="/integra
 <p>A number of functions are available to you as well.</p>
 <details class="info"><summary>Further functions</summary><p>There are other non-private functions available, but they aren't necessarily something you'll need to touch. Most
 of the functions are <code>open</code> to facilitate niche use-cases that require extending the ExtensibleBot class, but a
-handful are <code>inline</code> for the sake of avoiding function call overhead.</p>
+handful are <code>inline</code> for the sake of avoiding function call overhead or making use of reified types.</p>
 </details>
 <table>
 <thead>
@@ -1444,7 +1597,7 @@ handful are <code>inline</code> for the sake of avoiding function call overhead.
 <div class="md-source-date">
   <small>
     
-      Last update: 2021-05-14
+      Last update: 2021-06-08
     
   </small>
 </div>
@@ -1471,7 +1624,8 @@ handful are <code>inline</code> for the sake of avoiding function call overhead.
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../../getting-started/" class="md-footer__link md-footer__link--prev" rel="prev">
+        
+        <a href="../../getting-started/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Getting Started" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1486,7 +1640,8 @@ handful are <code>inline</code> for the sake of avoiding function call overhead.
         </a>
       
       
-        <a href="../extensions/" class="md-footer__link md-footer__link--next" rel="next">
+        
+        <a href="../extensions/" class="md-footer__link md-footer__link--next" aria-label="Next: Extensions" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
@@ -1521,10 +1676,10 @@ handful are <code>inline</code> for the sake of avoiding function call overhead.
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tabs", "navigation.top", "navigation.tracking", "toc.integrate"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.4fa0e4ee.min.js", "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tabs", "navigation.top", "navigation.tracking", "toc.integrate"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.477d984a.min.js", "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.1d3bfcf1.min.js"></script>
+      <script src="../../assets/javascripts/bundle.82b56eb2.min.js"></script>
       
     
   </body>
